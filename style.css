@@ -30,7 +30,7 @@
 .flex-btwn{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .flex-col{
@@ -224,6 +224,7 @@ max-width: 480px;
 
 .hero-image img{
 width: 100%;
+height: auto;
 }
 
 
@@ -413,8 +414,13 @@ width: 100%;
     transition: all .4s ease-in-out;
 }
 
+.nav-menu .btn{
+    font-size: 14px;
+    padding: 7px 35px;
+}
+
 .navigation .nav-menu .quote {
-    display: none;
+    width: 90%;
 }
 
 #clicker:checked~.nav-menu {
@@ -450,6 +456,18 @@ width: 100%;
     line-height: 24px;
     margin: 22px 0;
 }
+
+.hero-image img{
+    transform: scale(95%);
+    transition: all .3s ease-in-out;
+}
+
+.hero-image:hover img{
+    transform: scale(100%);
+    transition: .2s;
+
+}
+
 .btn{
     width: 100%;
 }
@@ -457,6 +475,24 @@ width: 100%;
 .btn::after{
     left: -96%;
 }
+
+
+
+
+.company-logos {
+    justify-content: space-around;
+    max-height: 110px;
+    margin-bottom: 70px;
+}
+
+
+
+
+/*
+====================================
+======== Services section ==========
+====================================
+*/
 
 .section-header{
     flex-direction: column;
@@ -466,11 +502,6 @@ width: 100%;
 
 .section-sub-heading p{
     width: 100%;
-}
-
-.company-logos {
-    max-height: 110px;
-    margin-bottom: 70px;
 }
 
 .services-cards{
