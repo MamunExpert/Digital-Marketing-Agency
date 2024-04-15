@@ -441,9 +441,34 @@ height: auto;
 */
 
 
-@media screen and (max-width: 899px) {
 
+
+
+/* 
+=========== CTA section ============ */
+@media screen and (max-width: 899px) {
+    .cta-container {
+        margin: 60px 12px;
+        padding: 60px;
+    }
+    
+    .cta-container .cta-image{
+        display: none;
+    }
+    
+    .cta-container .cta-content h3 {
+        font-size: 26px;
+    }
+    
+    .cta-container .cta-content p {
+        font-size: 16px;
+    }
 }
+
+
+
+
+
 
 
 /*
@@ -595,24 +620,10 @@ height: auto;
 =========== CTA section ============
 ====================================
 */
+
 .cta-container {
     margin: 60px 12px;
     padding: 60px;
-}
-
-.cta-container .cta-image{
-    display: none;
-}
-
-.cta-container .cta-content h3 {
-    font-size: 26px;
-}
-
-.cta-container .cta-content p {
-    font-size: 16px;
-
-}
-
 }
 
 
