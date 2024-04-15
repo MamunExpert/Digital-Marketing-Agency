@@ -396,11 +396,12 @@ height: auto;
     padding: 0px 60px;
     margin: 70px 100px;
     background: #F3F3F3;
-    gap: 112px;
+    border-radius: 45px;
     flex-shrink: 0;
 }
 
 .cta-container .cta-content{
+    width: 500px;
     align-items: flex-start;
     justify-content: center;
     gap: 26px;
@@ -422,6 +423,16 @@ height: auto;
     line-height: normal;
 }
 
+.cta-container .cta-image{
+    max-height: 348px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-container .cta-image img{
+    height: 100%;
+}
 
 /*
 ====================================
@@ -559,6 +570,7 @@ height: auto;
 }
 
 .section-sub-heading p{
+    text-align: center;
     width: 100%;
 }
 
@@ -573,6 +585,32 @@ height: auto;
 
 .services-cards .card-wrapper .card-content {
     gap: 38px;
+}
+
+
+
+
+/*
+====================================
+=========== CTA section ============
+====================================
+*/
+.cta-container {
+    margin: 60px 12px;
+    padding: 60px;
+}
+
+.cta-container .cta-image{
+    display: none;
+}
+
+.cta-container .cta-content h3 {
+    font-size: 26px;
+}
+
+.cta-container .cta-content p {
+    font-size: 16px;
+
 }
 
 }
