@@ -269,6 +269,10 @@ height: auto;
     padding: 0 7px;
 }
 
+.services-container .section-heading{
+    width: 22%;
+}
+
 .section-heading h2 {
     font-size: 40px;
     font-style: normal;
@@ -277,7 +281,6 @@ height: auto;
 }
 
 .section-sub-heading p{
-    width: 75%;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -389,12 +392,13 @@ height: auto;
 
 /*
 ====================================
-========== company logos ===========
+=========== CTA section ===========
 ====================================
 */
 .cta-container {
     padding: 0px 60px;
-    margin: 70px 100px;
+    margin: 100px;
+    margin-top: 50px;
     background: #F3F3F3;
     border-radius: 45px;
     flex-shrink: 0;
@@ -433,6 +437,30 @@ height: auto;
 .cta-container .cta-image img{
     height: 100%;
 }
+
+
+
+
+
+
+/*
+====================================
+======== case block studio =========
+====================================
+*/
+
+.case-studio-container {
+    padding: 0px 60px;
+    margin: 140px 70px;
+    margin-top: 160px;
+}
+
+.case-studio-container .section-heading{
+    width: 31%;
+}
+
+
+
 
 /*
 ====================================
