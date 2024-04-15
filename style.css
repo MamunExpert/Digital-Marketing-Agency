@@ -30,7 +30,7 @@
 .flex-btwn{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .flex-col{
@@ -238,13 +238,12 @@ width: 100%;
 
 .company-logos{
     max-height: 48px;
+    flex-wrap: wrap;
 }
 
 .company-logos img{
     height: 100%;
-    display: inline-block;
 }
-
 
 
 
@@ -286,14 +285,9 @@ width: 100%;
 
 
 
-
-
-
-
-
 .services-cards{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 510px);
     justify-content: space-between;
     grid-gap: 40px;
 }
@@ -306,17 +300,32 @@ width: 100%;
 }
 
 .services-card{
+    background: #f3f3f3;
     padding: 40px;
     border: 1px solid #191A23;
     border-radius: 45px;
     box-shadow: 0px 5px 0px 0px #191A23;
 }
 
+.bg-green{
+    background: #b9ff66;
+}
+
+.bg-black{
+    background: #191A23;
+}
+
+.services-cards .bg-black .card-title h3,
+.services-cards .bg-green .card-title h3
+{
+    background: #fff;
+}
+
 .card-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 43px;
+    gap: 93px;
 }
 
 .card-content .card-title h3 {
@@ -449,12 +458,6 @@ width: 100%;
     left: -96%;
 }
 
-.company-logos{
-    flex-wrap: wrap;
-    display: inline-block;
-}
-
-
 .section-header{
     flex-direction: column;
     justify-content: center;
@@ -463,6 +466,15 @@ width: 100%;
 
 .section-sub-heading p{
     width: 100%;
+}
+
+.company-logos {
+    max-height: 110px;
+    margin-bottom: 70px;
+}
+
+.services-cards{
+    grid-template-columns: repeat(1, 100%);
 }
 
 }
