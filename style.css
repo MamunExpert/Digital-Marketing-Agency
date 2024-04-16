@@ -263,31 +263,24 @@ height: auto;
     margin-bottom: 70px;
 }
 
-.section-heading{
-    background: #b9ff66;
-    border-radius: 7px;
-    padding: 0 7px;
-}
-
-.services-container .section-heading{
-    width: 22%;
-}
-
 .section-heading h2 {
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    padding: 0 7px;
+    background: #b9ff66;
+    border-radius: 7px;
 }
 
 .section-sub-heading p{
+    width: 70%;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 0 7px;
 }
-
-
 
 .services-cards{
     display: grid;
@@ -355,7 +348,7 @@ height: auto;
     font-weight: 400;
     line-height: 28px;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    transition: all .2s;
 }
 
 .card-content .card-link p:hover{
@@ -367,10 +360,10 @@ height: auto;
     height: auto;
     cursor: pointer;
     transform: scale(95%);
-    transition: all .3s ease-in-out;
+    transition: all .2s;
 }
 
-.card-content .card-link img:hover{
+.card-content .card-link:hover img{
     transform: scale(100%);
 }
 
@@ -449,15 +442,309 @@ height: auto;
 ====================================
 */
 
-.case-studio-container {
-    padding: 0px 60px;
-    margin: 140px 70px;
-    margin-top: 160px;
+.case-studio-container .case-studio-card-container {
+    align-items: flex-start;
+    border-radius: 45px;
+    background: #191A23;
+    padding: 70px 60px;
+    gap: 64px;
+
 }
 
-.case-studio-container .section-heading{
-    width: 31%;
+.case-studio-card-container .single-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
+
+.case-studio-card-container .line-card {
+    width: 1px;
+    height: 148px;
+    background: #FFF;
+}
+
+.case-studio-card-container .single-card .details p {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.case-studio-card-container .single-card .learn-more{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.case-studio-card-container .single-card .learn-more p {
+    color: #B9FF66;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.case-studio-card-container .single-card .learn-more p:hover {
+    font-weight: bold;
+}
+
+.case-studio-card-container .single-card .learn-more img {
+    max-width: 15px;
+    height: auto;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.case-studio-card-container .single-card .learn-more:hover img {
+    max-width: 17px;
+}
+
+
+
+
+
+
+/*
+====================================
+======= Testimonials section =======
+====================================
+*/
+
+.testimonials-container .testimonials-card-wrapper{
+    background-color: #191A23;
+    border-radius: 45px;
+    padding: 50px;
+    gap: 40px;
+}
+
+.testimonials-card-wrapper .review-card .comments{
+    padding: 35px;
+    border: 1px solid #b9ff66;
+    border-radius: 45px;
+    position: relative;
+}
+
+.testimonials-card-wrapper .review-card .comments::after{
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    background: #191A23;
+    border-left: 1px solid #b9ff66;
+    border-top: 1px solid #b9ff66;
+    border-right: 1px solid #191A23;
+    border-bottom: 1px solid #191A23;
+    transform: translate(75%, 60%) rotate(225deg);
+}
+
+.testimonials-card-wrapper .review-card .comments p{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+}
+
+.testimonials-card-wrapper .review-card .name-info{
+    margin-bottom: 24px;
+    /* position: absolute; */
+    transform: translate(12%, 70%);
+}
+
+.testimonials-card-wrapper .review-card .name-info h4{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+.testimonials-card-wrapper .review-card .name-info .vip{
+    color: #b9ff66; 
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+/*
+====================================
+======= Contact section =======
+====================================
+*/
+/* .contact-container .contact-form-wrapper{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    background: #f3f3f3;
+    border-radius: 45px;
+    padding: 60px 100px 80px 100px;
+    overflow: hidden;
+}
+
+.contact-form-wrapper .contact-form{
+    width: 100%;
+    align-items: flex-start;
+    gap: 40px;
+} */
+/* 
+.contact-form-wrapper .contact-form .input-fields,
+.contact-form-wrapper .contact-form .radio-buttons{
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.contact-form-wrapper .contact-form .input-fields input,
+.contact-form-wrapper .contact-form .input-fields textarea,
+.contact-form-wrapper .contact-form button {
+    display: block;
+    width: 556px;
+    outline: 0;
+    padding: 18px 30px;
+    border-radius: 14px;
+    border: 1px solid #000;
+    background: #FFF;
+    color: #898989;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-form-wrapper .contact-form .input-fields label {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.contact-form-wrapper .contact-form .input-fields textarea{
+    height: 190px;
+    resize: none;
+}
+
+.contact-form-wrapper .contact-form button {
+    outline: 0;
+    border: 0;
+    padding: 20px 35px;
+    background: #191A23;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact-form-wrapper .side-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 300px;
+}
+.contact-form-wrapper .side-image img {
+    width: 100%;
+} */
+
+
+
+
+
+
+.contact-container .contact-form-wrapper{
+    padding: 60px 100px 80px 100px;
+    background: #f3f3f3;
+    border-radius: 45px;
+    background-image: url(./assets/contact.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 202% 50%;
+}
+
+.contact-form-wrapper .contact-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form-wrapper .contact-form .radio-buttons{
+    display: flex;
+    gap: 35px;
+}
+
+.contact-form .radio-buttons .radio-color{
+    accent-color: #B9FF66;
+}
+
+.contact-form-wrapper .contact-form .input-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-fields .name-field,
+.input-fields .email-field,
+.input-fields .message-field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-form .input-fields input{
+    display: block;
+    width: 100%;
+    outline: 0;
+    padding: 12px 30px;
+    border-radius: 14px;
+    border: 1px solid #000;
+    font-size: 18px;
+    background: #FFF;
+    color: #898989;
+}
+
+.contact-form .input-fields textarea{
+    display: block;
+    width: 100%;
+    height: 150px;
+    outline: 0;
+    padding: 14px 30px;
+    border-radius: 14px;
+    resize: none;
+}
+
+.contact-form-wrapper .contact-form label{
+    color: #000;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.contact-form .send-button button {
+    display: block;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 14px 35px;
+    border-radius: 14px;
+    text-align: center;
+    background: #191A23;
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+
+
+
+
 
 
 
@@ -470,27 +757,30 @@ height: auto;
 
 
 
+@media screen and (max-width: 899px) { 
 
-
-/* 
-=========== CTA section ============ */
-@media screen and (max-width: 899px) {
-    .cta-container {
-        margin: 60px 12px;
-        padding: 60px;
-    }
-    
-    .cta-container .cta-image{
+/* =========== CTA section ============ */
+.cta-container .cta-image {
         display: none;
     }
-    
-    .cta-container .cta-content h3 {
-        font-size: 26px;
-    }
-    
-    .cta-container .cta-content p {
-        font-size: 16px;
-    }
+.cta-container .cta-content h3 {
+    font-size: 26px;
+}
+.cta-container .cta-content p {
+    font-size: 16px;
+}
+
+
+
+/*======= Testimonials section =======*/
+.testimonials-card-wrapper .mobile-hide{
+    display: none;
+}
+
+.testimonials-card-wrapper .review-card .comments p {
+    font-size: 16px;
+}
+
 }
 
 
@@ -513,6 +803,7 @@ height: auto;
 
 .container {
     padding: 60px 12px 0 12px;
+    margin-bottom: 0;
 }
 
 .close,
@@ -610,21 +901,22 @@ height: auto;
 
 
 
-/*
-====================================
-======== Services section ==========
-====================================
-*/
-
+/* ======== Services section ========== */
 .section-header{
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 30px;
+}
+
+.section-heading{
+    width: auto !important;
+    text-align: center;
 }
 
 .section-sub-heading p{
     text-align: center;
-    width: 100%;
+    width: 100% !important;
 }
 
 .services-cards{
@@ -642,27 +934,66 @@ height: auto;
 
 
 
-
-/*
-====================================
-=========== CTA section ============
-====================================
-*/
+/*=========== CTA section ============*/
 
 .cta-container {
-    margin: 60px 12px;
+    margin: 60px 12px 0 12px;
     padding: 60px;
 }
 
 
 
+/*=========== Uses case block section ============*/
+
+.case-studio-container .case-studio-card-container {
+    padding: 42px 50px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.case-studio-card-container .single-card:nth-child(3),
+.case-studio-card-container .single-card:nth-child(5),
+.case-studio-card-container .line-card {
+    display: none;
+}
+
+.case-studio-card-container .single-card .details p {
+    font-size: 19px;
+}
+
+
+/*======= Testimonials section =======*/
+.testimonials-container .testimonials-card-wrapper {
+    padding: 38px;
+}
+
+
+
+/*======= Contact section =======*/
+.contact-form-wrapper .contact-form {
+    width: 100%;
+}
+
+.contact-container .contact-form-wrapper {
+    padding: 40px 30px;
+    background-image: none;
+}
+
+
+}
+
+
+
+
+
+
+
+
 /*
 ====================================
 ====================================
 ====================================
 */
-
-
 @media screen and (min-width:320px) 
 and (max-width:350px) {
 
