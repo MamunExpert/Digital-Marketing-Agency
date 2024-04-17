@@ -1280,8 +1280,6 @@ footer{
 
 
 
-
-
 /*======= Contact section =======*/
 .contact-form-wrapper .contact-form {
     width: 100%;
@@ -1292,6 +1290,59 @@ footer{
     background-image: none;
 }
 
+
+
+.footer-container{
+    background: #191A23;
+}
+
+.footer-container .footer-wrapper{
+    gap: 30px;
+}
+
+.footer-wrapper .footer-navigation{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-navigation .footer-nav-menu ul{
+    flex-direction: column;
+}
+
+.footer-navigation a, #pp-text{
+    text-decoration: none;
+}
+
+.footer-navigation a:hover, #pp-text:hover{
+    text-decoration: underline;
+}
+
+.footer-contact-details{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-contact-details .contact-info {
+    gap: 30px;
+    align-items: center;
+}
+
+.footer-contact-details .contact-info #info{
+    text-align: center;
+}
+
+.footer-contact-details .subscribe-button{
+    flex-direction: column;
+    padding: 20px;
+    background: #292A32;
+    border-radius: 14px;
+}
+
+.footer-contact-details .subscribe-button input,
+.footer-contact-details .subscribe-button button{
+    display: block;
+    width: 100%;
+}
 
 }
 
