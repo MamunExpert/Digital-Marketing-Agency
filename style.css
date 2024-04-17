@@ -1293,6 +1293,14 @@ footer{
 
 
 .footer-container{
+    padding: 50px 20px 30px 20px;
+}
+
+footer{
+    padding: 0;
+}
+
+.footer-container{
     background: #191A23;
 }
 
@@ -1332,6 +1340,7 @@ footer{
 }
 
 .footer-contact-details .subscribe-button{
+    width: 100%;
     flex-direction: column;
     padding: 20px;
     background: #292A32;
@@ -1344,6 +1353,11 @@ footer{
     width: 100%;
 }
 
+.copyright-text{
+    flex-direction: column;
+    gap: 15px;
+}
+    
 }
 
 
