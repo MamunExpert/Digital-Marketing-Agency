@@ -577,6 +577,7 @@ height: auto;
 ======= Contact section =======
 ====================================
 */
+
 .contact-container .contact-form-wrapper{
     padding: 60px 100px 80px 100px;
     background: #f3f3f3;
@@ -660,13 +661,17 @@ height: auto;
     font-size: 20px;
     line-height: 28px;
     cursor: pointer;
-    transition: .2s all ease-in;
+    transition: all .2s ease-in-out;
 }
 
 .contact-form .send-button button:hover{
     background: #b9ff66;
     color: #191A23;
+    letter-spacing: 2px;
 }
+
+
+
 
 
 
@@ -783,7 +788,7 @@ height: auto;
     width: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 10px;
     position: relative;
 }
@@ -839,6 +844,172 @@ height: auto;
 .team-container .see-more-btn .btn{
     padding: 18px 70px;
 }
+
+
+
+
+
+/*
+====================================
+========== Footer section ==========
+====================================
+*/
+
+.footer-container{
+    padding-bottom: 0;
+}
+
+footer{
+    padding: 60px 100px 80px 100px;
+    background: #191A23;
+    border-radius: 45px 45px 0px 0px;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-wrapper .footer-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-navigation .footer-nav-menu ul,
+.footer-navigation .social-links ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.footer-navigation .footer-logo{
+    max-width: 180px;
+}
+
+.footer-navigation .footer-logo img{
+    display: block;
+    width: 80%;
+    cursor: pointer;
+}
+
+.footer-navigation a, #pp-text{
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-navigation a:hover, #pp-text:hover{
+    text-decoration: none;
+}
+
+.footer-navigation .social-links ul li{
+    cursor: pointer;
+    max-width: 30px;
+}
+
+.footer-navigation .social-links ul li img{
+    display: block;
+    width: 85%;
+}
+
+.footer-contact-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contact-details .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-contact-details .contact-info #title h4{
+    display: inline-block;
+    font-size: 18px;
+    background: #b9ff66;
+    padding: 0 7px;
+    color: #000;
+    font-weight: 500;
+    border-radius: 7px;
+}
+
+.footer-contact-details .contact-info #info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-contact-details .subscribe-button{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-contact-details .subscribe-button input{
+    display: inline-block;
+    width: 50%;
+    outline: 0;
+    padding: 14px 35px;
+    border-radius: 14px;
+    border: 1px solid #fff;
+    background: #191A23;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-contact-details .subscribe-button input:focus{
+    color: #b9ff66;
+    border: 1px solid #b9ff66;
+}
+
+.footer-contact-details .subscribe-button button {
+    display: inline-block;
+    width: 50%;
+    outline: 0;
+    border: 0;
+    padding: 14px 35px;
+    border-radius: 14px;
+    text-align: center;
+    background: #b9ff66;
+    color: #000;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.footer-contact-details .subscribe-button button:hover{
+    background: #FFF;
+}
+
+.footer-wrapper .footer-line{
+    width: 100%;
+    height: 1px;
+    background: #FFF;
+}
+
+.footer-wrapper .copyright-text{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-wrapper .copyright-text p, #pp-text{
+    font-size: 16px !important;
+    color: #fff;
+}
+
+
+
+
+
+
 
 
 
@@ -1064,6 +1235,7 @@ height: auto;
 /* ===== Working process section ====== */
 .working-process-blocks-wrapper .working-process .process-block{
     padding: 30px;
+    background: #f3f3f3;
 }
 
 .working-process .process-block label {
@@ -1075,6 +1247,14 @@ height: auto;
     margin-top: 16px;
     font-size: 14px;
     padding-top: 18px;
+}
+
+.working-process .process-block input[type="radio"]:checked ~ label::after{
+    background: #b9ff66;
+}
+
+.working-process .process-block input[type="radio"]:checked ~ label .block-number{
+    background: #b9ff66;
 }
 
 
