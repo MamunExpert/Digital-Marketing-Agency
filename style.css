@@ -19,13 +19,6 @@
     justify-content: center;
 }
 
-.flex-gap40{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-}
-
 
 .flex-btwn{
     display: flex;
@@ -47,7 +40,7 @@
     cursor: pointer;
     color: #fff;
     background: #191A23;
-    font-size: 20px;
+    font-size: 18px;
     padding: 18px 35px;
     text-align: center;
     font-style: normal;
@@ -122,10 +115,17 @@
     position: relative;
 }
 
+.navigation .nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
 .navigation .nav-menu a {
     display: inline-block;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
     font-style: normal;
     font-weight: 400;
@@ -187,7 +187,7 @@
   
 .close {
     right: 20px;
-    top: 20px;
+    top: 26px;
 }
 
 
@@ -284,7 +284,7 @@ height: auto;
 
 .services-cards{
     display: grid;
-    grid-template-columns: repeat(2, 510px);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     grid-gap: 40px;
 }
@@ -626,7 +626,7 @@ height: auto;
     border: 1px solid #000;
     font-size: 18px;
     background: #FFF;
-    color: #898989;
+    color: #191A23;
 }
 
 .contact-form .input-fields textarea{
@@ -634,6 +634,8 @@ height: auto;
     width: 100%;
     height: 150px;
     outline: 0;
+    font-size: 18px;
+    color: #191A23;
     padding: 14px 30px;
     border-radius: 14px;
     resize: none;
@@ -664,12 +666,165 @@ height: auto;
 
 
 
+/*
+====================================
+===== Working process section ======
+====================================
+*/
+
+.working-process-blocks-wrapper .working-process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.working-process-blocks-wrapper .working-process .process-block{
+    list-style-type: none;
+    padding: 41px 60px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    background: #b9ff66;
+    box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.working-process .process-block input[type="radio"]
+{   display: none;}
+
+.working-process .process-block label {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 26px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.working-process .process-block label .block-number{
+    font-size: 30px;
+    margin-right: 25px;
+}
+
+.working-process .process-block label::after{
+    content: "+";
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    background: #f3f3f3;
+    border: 1px solid #191A23;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.working-process .process-block .hidden-text{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.working-process .process-block .hidden-text p{
+    margin-top: 26px;
+    font-size: 16px;
+    color: #000;
+    border-top: 1px solid #000;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.working-process .process-block input[type="radio"]:checked ~ .hidden-text{
+    max-height: fit-content;
+}
+
+.working-process .process-block input[type="radio"]:checked ~ label::after{
+    content: "-";
+    line-height: 26px;
+}
+
 
 
 
 
 /*
 ====================================
+========== Our Team section ========
+====================================
+*/
+
+.team-container .team-members-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.team-container .team-members-wrapper .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 40px 35px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.team-members-wrapper .team-member .user-profile{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.team-members-wrapper .team-member .user-profile h4{
+    font-size: 18px;
+    font-weight: 500; 
+}
+
+.team-members-wrapper .team-member .user-profile p{
+    font-size: 13px;
+}
+
+.team-members-wrapper .team-member .middle-line{
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+
+.team-member .user-profile .user-pic{
+    max-width: 100px;
+    height: auto;
+}
+
+.team-member .user-profile .user-pic img{
+    width: 100%;
+}
+
+.team-members-wrapper .team-member .user-details p{
+    color: #000;
+    font-size: 16px;
+}
+
+.team-container .see-more-btn{
+    position: absolute;
+    right: 0;
+    bottom: -15%;
+}
+
+.team-container .see-more-btn .btn{
+    padding: 18px 70px;
+}
+
+
+
+
+/*
+====================================
+============ breakpoints ===========
+============ breakpoints ===========
 ============ breakpoints ===========
 ====================================
 */
@@ -717,7 +872,7 @@ height: auto;
 
 @media screen and (max-width: 619px) {
 .header-container {
-    padding: 12px !important;
+    padding: 24px 12px !important;
 }
 
 .container {
@@ -802,6 +957,7 @@ height: auto;
 
 .btn{
     width: 100%;
+    padding: 18px 32px;
 }
 
 .btn::after{
@@ -839,7 +995,7 @@ height: auto;
 }
 
 .services-cards{
-    grid-template-columns: repeat(1, 100%);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .services-cards .card-wrapper {
@@ -857,7 +1013,7 @@ height: auto;
 
 .cta-container {
     margin: 60px 12px 0 12px;
-    padding: 60px;
+    padding: 50px;
 }
 
 
@@ -881,10 +1037,46 @@ height: auto;
 }
 
 
+
+
+/* ===== Working process section ====== */
+.working-process-blocks-wrapper .working-process .process-block{
+    padding: 30px;
+}
+
+.working-process .process-block label {
+    font-size: 18px;
+    padding-right: 32px;
+}
+
+.working-process .process-block .hidden-text p {
+    margin-top: 16px;
+    font-size: 14px;
+    padding-top: 18px;
+}
+
+
+
+/* ===== Team section ====== */
+.team-container .team-members-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 28%;
+}
+
+
+
 /*======= Testimonials section =======*/
 .testimonials-container .testimonials-card-wrapper {
     padding: 38px;
 }
+
+.team-container .see-more-btn{
+    left: 0;
+    bottom: -5%;
+}
+
+
 
 
 
