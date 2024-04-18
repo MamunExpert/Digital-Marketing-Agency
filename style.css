@@ -1014,373 +1014,358 @@ footer{
 
 
 
-/*
-====================================
-============ breakpoints ===========
-============ breakpoints ===========
-============ breakpoints ===========
-====================================
-*/
+            /*================================
+            ========== breakpoints ===========
+            ========== breakpoints ===========
+            ========== breakpoints ===========
+            ================================*/
 
 
 
 @media screen and (max-width: 899px) { 
 
 /* =========== CTA section ============ */
-.cta-container .cta-image {
-        display: none;
+    .cta-container .cta-image {
+            display: none;
+        }
+    .cta-container .cta-content h3 {
+        font-size: 26px;
     }
-.cta-container .cta-content h3 {
-    font-size: 26px;
-}
-.cta-container .cta-content p {
-    font-size: 16px;
-}
+    .cta-container .cta-content p {
+        font-size: 16px;
+    }
 
 
 
 /*======= Testimonials section =======*/
-.testimonials-card-wrapper .mobile-hide{
-    display: none;
+    .testimonials-card-wrapper .mobile-hide{
+        display: none;
+    }
+
+    .testimonials-card-wrapper .review-card .comments p {
+        font-size: 16px;
+    }
+
 }
 
-.testimonials-card-wrapper .review-card .comments p {
-    font-size: 16px;
-}
-
-}
 
 
-
-
-
-
-
-/*
-====================================
-====================================
-====================================
-*/
+            /* mobile breakpoint start here */
+            /* mobile breakpoint start here */
+            /* mobile breakpoint start here */
+            /* mobile breakpoint start here */
+            /* mobile breakpoint start here */
 
 
 @media screen and (max-width: 619px) {
-.header-container {
-    padding: 24px 12px !important;
-}
+    .header-container {
+        padding: 24px 12px !important;
+    }
 
-.container {
-    padding: 60px 12px 0 12px;
-    margin-bottom: 0;
-}
+    .container {
+        padding: 60px 12px 0 12px;
+        margin-bottom: 0;
+    }
 
-.close,
-.open {
-    display: block;
-}
+    .close,
+    .open {
+        display: block;
+    }
 
-.navigation .nav-menu {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 65%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    background: #B9FF66;
-    right: -50%;
-    transform: translateX(200%) rotateZ(-90deg);
-    box-shadow: -200px 0 0px rgba(0, 0, 0, 0.9);
-    z-index: 100;
-    transition: all .4s ease-in-out;
-}
+    .navigation .nav-menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background: #B9FF66;
+        right: -50%;
+        transform: translateX(200%) rotateZ(-90deg);
+        box-shadow: -200px 0 0px rgba(0, 0, 0, 0.9);
+        z-index: 100;
+        transition: all .4s ease-in-out;
+    }
 
-.nav-menu .btn{
-    font-size: 14px;
-    padding: 7px 35px;
-}
+    .nav-menu .btn{
+        font-size: 14px;
+        padding: 7px 35px;
+    }
 
-.navigation .nav-menu .quote {
-    width: 90%;
-}
+    .navigation .nav-menu .quote {
+        width: 90%;
+    }
 
-#clicker:checked~.nav-menu {
-    right: 0;
-    transform: translateX(0) rotateZ(0);
-}
+    #clicker:checked~.nav-menu {
+        right: 0;
+        transform: translateX(0) rotateZ(0);
+    }
 
-.hero-container {
-    margin-top: 35px;
-}
+    .hero-container {
+        margin-top: 35px;
+    }
 
-.hero-wrapper{
-    flex-direction: column;
-    gap: 35px;
-}
+    .hero-wrapper{
+        flex-direction: column;
+        gap: 35px;
+    }
 
-.hero-content {
-    width: 100%;
-}
+    .hero-content {
+        width: 100%;
+    }
 
-.hero-content h1{
-    font-size: 43px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
+    .hero-content h1{
+        font-size: 43px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
 
-.hero-content p {
-    width: 90%;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 22px 0;
-}
+    .hero-content p {
+        width: 90%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 22px 0;
+    }
 
-.hero-image img{
-    transform: scale(95%);
-    transition: all .3s ease-in-out;
-}
+    .hero-image img{
+        transform: scale(95%);
+        transition: all .3s ease-in-out;
+    }
 
-.hero-image:hover img{
-    transform: scale(100%);
-    transition: .2s;
+    .hero-image:hover img{
+        transform: scale(100%);
+        transition: .2s;
 
-}
+    }
 
-.btn{
-    width: 100%;
-    padding: 18px 32px;
-}
+    .btn{
+        width: 100%;
+        padding: 18px 32px;
+    }
 
-.btn::after{
-    left: -96%;
-}
-
-
+    .btn::after{
+        left: -96%;
+    }
 
 
-.company-logos {
-    justify-content: space-around;
-    max-height: 110px;
-    margin-bottom: 70px;
-}
+
+
+/* ========== company logos ========== */
+    .company-logos {
+        justify-content: space-around;
+        max-height: 110px;
+        margin-bottom: 70px;
+    }
 
 
 
 
 /* ======== Services section ========== */
-.section-header{
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 30px;
-}
+    .section-header{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
 
-.section-heading{
-    width: auto !important;
-    text-align: center;
-}
+    .section-heading{
+        width: auto !important;
+        text-align: center;
+    }
 
-.section-sub-heading p{
-    text-align: center;
-    width: 100% !important;
-}
+    .section-sub-heading p{
+        text-align: center;
+        width: 100% !important;
+    }
 
-.services-cards{
-    grid-template-columns: repeat(1, 1fr);
-}
+    .services-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-.services-cards .card-wrapper {
-    gap: 32px;
-    flex-direction: column;
-}
+    .services-cards .card-wrapper {
+        gap: 32px;
+        flex-direction: column;
+    }
 
-.services-cards .card-wrapper .card-content {
-    gap: 38px;
-}
+    .services-cards .card-wrapper .card-content {
+        gap: 38px;
+    }
 
 
 
 /*=========== CTA section ============*/
-
-.cta-container {
-    margin: 60px 12px 0 12px;
-    padding: 50px;
-}
+    .cta-container {
+        margin: 60px 12px 0 12px;
+        padding: 50px;
+    }
 
 
 
 /*=========== Uses case block section ============*/
+    .case-studio-container .case-studio-card-container {
+        padding: 42px 50px;
+        flex-direction: column;
+        gap: 20px;
+    }
 
-.case-studio-container .case-studio-card-container {
-    padding: 42px 50px;
-    flex-direction: column;
-    gap: 20px;
-}
+    .case-studio-card-container .single-card:nth-child(3),
+    .case-studio-card-container .single-card:nth-child(5),
+    .case-studio-card-container .line-card {
+        display: none;
+    }
 
-.case-studio-card-container .single-card:nth-child(3),
-.case-studio-card-container .single-card:nth-child(5),
-.case-studio-card-container .line-card {
-    display: none;
-}
-
-.case-studio-card-container .single-card .details p {
-    font-size: 19px;
-}
+    .case-studio-card-container .single-card .details p {
+        font-size: 19px;
+    }
 
 
 
 
 /* ===== Working process section ====== */
-.working-process-blocks-wrapper .working-process .process-block{
-    padding: 30px;
-    background: #f3f3f3;
-}
+    .working-process-blocks-wrapper .working-process .process-block{
+        padding: 30px;
+        background: #f3f3f3;
+    }
 
-.working-process .process-block label {
-    font-size: 18px;
-    padding-right: 32px;
-}
+    .working-process .process-block label {
+        font-size: 18px;
+        padding-right: 32px;
+    }
 
-.working-process .process-block .hidden-text p {
-    margin-top: 16px;
-    font-size: 14px;
-    padding-top: 18px;
-}
+    .working-process .process-block .hidden-text p {
+        margin-top: 16px;
+        font-size: 14px;
+        padding-top: 18px;
+    }
 
-.working-process .process-block input[type="radio"]:checked ~ label::after{
-    background: #b9ff66;
-}
+    .working-process .process-block input[type="radio"]:checked ~ label::after{
+        background: #b9ff66;
+    }
 
-.working-process .process-block input[type="radio"]:checked ~ label .block-number{
-    background: #b9ff66;
-}
+    .working-process .process-block input[type="radio"]:checked ~ label .block-number{
+        background: #b9ff66;
+    }
+
 
 
 
 /* ===== Team section ====== */
-.team-container .team-members-wrapper{
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    margin-bottom: 28%;
-}
+    .team-container .team-members-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 28%;
+    }
+
 
 
 
 /*======= Testimonials section =======*/
-.testimonials-container .testimonials-card-wrapper {
-    padding: 38px;
-}
+    .testimonials-container .testimonials-card-wrapper {
+        padding: 38px;
+    }
 
-.team-container .see-more-btn{
-    left: 0;
-    bottom: -5%;
-}
+    .team-container .see-more-btn{
+        left: 0;
+        bottom: -5%;
+    }
+
 
 
 
 /*======= Contact section =======*/
-.contact-form-wrapper .contact-form {
-    width: 100%;
-}
+    .contact-form-wrapper .contact-form {
+        width: 100%;
+    }
 
-.contact-container .contact-form-wrapper {
-    padding: 40px 30px;
-    background-image: none;
-}
+    .contact-container .contact-form-wrapper {
+        padding: 40px 30px;
+        background-image: none;
+    }
 
 
 
-.footer-container{
-    padding: 50px 20px 30px 20px;
-}
 
-footer{
-    padding: 0;
-}
+/*======= Footer section =======*/
+    .footer-container{
+        padding: 50px 20px 30px 20px;
+        background: #191A23;
+        margin-top: 60px;
+    }
 
-.footer-container{
-    background: #191A23;
-}
+    footer{
+        padding: 0;
+    }
 
-.footer-container .footer-wrapper{
-    gap: 30px;
-}
+    .footer-container .footer-wrapper{
+        gap: 30px;
+    }
 
-.footer-wrapper .footer-navigation{
-    flex-direction: column;
-    gap: 30px;
-}
+    .footer-wrapper .footer-navigation{
+        flex-direction: column;
+        gap: 30px;
+    }
 
-.footer-navigation .footer-logo {
-    text-align: center;
-}
+    .footer-navigation .footer-logo {
+        text-align: center;
+    }
 
-.footer-navigation .footer-logo img{
-    display: inline-block;
-}
+    .footer-navigation .footer-logo img{
+        display: inline-block;
+    }
 
-.footer-navigation .footer-nav-menu ul{
-    flex-direction: column;
-}
+    .footer-navigation .footer-nav-menu ul{
+        flex-direction: column;
+    }
 
-.footer-navigation a, #pp-text{
-    text-decoration: none;
-}
+    .footer-navigation a, #pp-text{
+        text-decoration: none;
+    }
 
-.footer-navigation a:hover, #pp-text:hover{
-    text-decoration: underline;
-}
+    .footer-navigation a:hover, #pp-text:hover{
+        text-decoration: underline;
+    }
 
-.footer-contact-details{
-    flex-direction: column;
-    gap: 30px;
-}
+    .footer-contact-details{
+        flex-direction: column;
+        gap: 30px;
+    }
 
-.footer-contact-details .contact-info {
-    gap: 30px;
-    align-items: center;
-}
+    .footer-contact-details .contact-info {
+        gap: 30px;
+        align-items: center;
+    }
 
-.footer-contact-details .contact-info #info{
-    text-align: center;
-}
+    .footer-contact-details .contact-info #info{
+        text-align: center;
+    }
 
-.footer-contact-details .subscribe-button{
-    width: 100%;
-    flex-direction: column;
-    padding: 20px;
-    background: #292A32;
-    border-radius: 14px;
-}
+    .footer-contact-details .subscribe-button{
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        background: #292A32;
+        border-radius: 14px;
+    }
 
-.footer-contact-details .subscribe-button input,
-.footer-contact-details .subscribe-button button{
-    display: block;
-    width: 100%;
-}
+    .footer-contact-details .subscribe-button input,
+    .footer-contact-details .subscribe-button button{
+        display: block;
+        width: 100%;
+    }
 
-.copyright-text{
-    flex-direction: column;
-    gap: 15px;
-}
+    .copyright-text{
+        flex-direction: column;
+        gap: 15px;
+    }
     
 }
 
-
-
-
-
-
-
-
-/*
-====================================
-====================================
-====================================
-*/
-@media screen and (min-width:320px) 
-and (max-width:350px) {
-
-}
+            /* mobile breakpoints end here */
+            /* mobile breakpoints end here */
+            /* mobile breakpoints end here */
+            /* mobile breakpoints end here */
+            /* mobile breakpoints end here */
